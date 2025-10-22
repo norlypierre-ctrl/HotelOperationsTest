@@ -14,14 +14,14 @@ class RoomTest {
       room = new Room(2,100);
   }
   @Test
-  void testCheckin(){
+  void testCheckIn(){
       room.checkIn();
       assertTrue(room.isOccupied());
       assertTrue(room.isDirty());
 
   }
     @Test
-    void testCheckout() {
+    void testCheckOut() {
         room.checkIn();
         room.checkout();
         assertFalse(room.isOccupied());
